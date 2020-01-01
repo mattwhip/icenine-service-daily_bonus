@@ -1,0 +1,7 @@
+create_table("db_users") {
+	t.Column("id", "uuid", {"primary": true})
+	t.Column("u_id", "string", {"size": 100})
+	t.Column("last_played", "datetime", {})
+	t.Column("streak", "integer", {})
+}
+add_index("db_users", "u_id", {"unique": true})
