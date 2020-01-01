@@ -1,0 +1,6 @@
+create_table("db_configs") {
+	t.Column("id", "uuid", {"primary": true})
+	t.Column("reset_seconds", "integer", {})
+	t.Column("streak_break_seconds", "integer", {})
+	t.Column("wheels_json", "text", {})
+}
